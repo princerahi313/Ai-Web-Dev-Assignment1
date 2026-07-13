@@ -244,3 +244,121 @@ body {
     font-size: 14px;
     color: #6b7280;
 }
+
+.pricing-section {
+    padding: 90px 8%;
+    background-color: #f9fafb;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card--featured {
+    background-color: #111827;
+    border-color: #111827;
+    color: #ffffff;
+}
+
+.plan-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.pricing-card--featured .plan-label {
+    color: #9ca3af;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: 900;
+    color: #111827;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.pricing-card--featured .plan-price {
+    color: #ffffff;
+}
+
+.plan-per {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 28px;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 32px;
+    flex: 1;
+}
+
+.plan-features li {
+    font-size: 14px;
+    color: #374151;
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.pricing-card--featured .plan-features li {
+    color: #d1d5db;
+    border-bottom-color: #1f2937;
+}
+
+.pricing-card--featured .plan-features li::before {
+    color: #60a5fa;
+}
+
+.plan-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+.pricing-card--featured .btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.pricing-card--featured .btn-outline {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.pricing-card--featured .btn-outline:hover {
+    background-color: #ffffff;
+    color: #111827;
+}
